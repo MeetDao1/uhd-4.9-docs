@@ -8,7 +8,7 @@ UHD v4.9.0.0 文档源仓库（Read the Docs）。本仓库为构建 UHD 手册�
 ## 在线 & 离线文档
 
 - **项目页**：https://app.readthedocs.org/projects/uhd-49-docs/
-- **在线文档**：https://uhd-49-docs.readthedocs.io/en/latest/
+- **在线文档**：https://uhd-49-docs.readthedocs.io/zh-cn/latest/
 - **离线下载（Offline formats，已启用）**：https://readthedocs.org/projects/uhd-49-docs/downloads/
   - `htmlzip` — **完整手册离线包**（全部 Doxygen HTML 页面 + 搜索索引，推荐离线使用）
   - `pdf` / `epub` — 由 Sphinx 生成的附加格式（简版）

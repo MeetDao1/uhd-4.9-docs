@@ -176,11 +176,13 @@ epub_exclude_files = ['search.html']
 
 ## Now we cheat Sphinx by running Doxygen instead. This will overwrite the
 # Sphinx output with the Doxygen output.
+# note: check=True makes a failing Doxygen run fail the whole build loudly
+# (a silent partial manual used to be published as a "successful" build).
 _doxy_dir = '../build_doxygen'
 import subprocess
-subprocess.call(
+subprocess.run(
     f"mkdir -p {_doxy_dir} && "
     f"cmake ../../.. -DUHD_BOOST_REQUIRED=OFF -DENABLE_LIBUHD=OFF -DENABLE_MAN_PAGES=OFF "
     f"-DENABLE_DOXYGEN_FULL=ON -B {_doxy_dir} && "
-    f"make -C {_doxy_dir} doxygen_docs", shell=True)
+    f"make -C {_doxy_dir} doxygen_docs", shell=True, check=True)
 html_extra_path = [f'{_doxy_dir}/docs/doxygen/html']

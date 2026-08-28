@@ -7,5 +7,5 @@ dependencies:
   - pip
   - cmake
   - compilers
-  - doxygen
+  - doxygen=1.9.8
   - sphinx=5.3
