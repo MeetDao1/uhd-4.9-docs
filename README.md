@@ -5,6 +5,17 @@ UHD v4.9.0.0 文档源仓库（Read the Docs）。本仓库为构建 UHD 手册�
 `images/`（镜像清单）。Doxygen 生成手册 HTML，Sphinx 仅作为 Read the Docs 外壳
 （与用户手册相同的方式，"cheat Sphinx by running Doxygen instead"）。
 
+## 在线 & 离线文档
+
+- **项目页**：https://app.readthedocs.org/projects/uhd-49-docs/
+- **在线文档**：https://uhd-49-docs.readthedocs.io/en/latest/
+- **离线下载（Offline formats，已启用）**：https://readthedocs.org/projects/uhd-49-docs/downloads/
+  - `htmlzip` — **完整手册离线包**（全部 Doxygen HTML 页面 + 搜索索引，推荐离线使用）
+  - `pdf` / `epub` — 由 Sphinx 生成的附加格式（简版）
+
+UHD 4.9（v4.9.0.0）提供完整离线文档：设备手册（Part I）、开发手册与 API 参考（Part II）、
+FPGA 手册（Part III）。每次推送本仓库会自动重新构建并更新所有格式。
+
 ## 构建流程（Read the Docs 自动执行）
 
 配置见 `.readthedocs.yaml`：
