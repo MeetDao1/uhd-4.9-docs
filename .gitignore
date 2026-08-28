@@ -1,0 +1,5 @@
+# build artifacts
+host/docs/sphinx/build_doxygen/
+host/docs/sphinx/build_doxygen_local/
+*.pyc
+__pycache__/

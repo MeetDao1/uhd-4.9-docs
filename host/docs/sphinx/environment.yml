@@ -1,0 +1,11 @@
+name: UHD
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - cmake
+  - compilers
+  - doxygen
+  - sphinx=5.3
